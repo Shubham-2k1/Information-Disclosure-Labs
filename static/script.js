@@ -7,6 +7,7 @@ async function onsubmit1() {
 
         if (data === flag) {
             alert('Flag 1 is correct');
+            document.querySelector('button[type="submit"]').textContent = 'Solved'; 
         } else {
             alert('Flag Incorrect');
         }
@@ -21,7 +22,8 @@ function onsubmit2(){
     const data = document.getElementById("flag2").value;
     if(data === 'FLAG2{H1D3_1MP0RTANT_DATA_1N_ENV1R0NM3NTS}')
     {
-        alert('Flag 2 is correct')
+        alert('Flag 2 is correct');
+        document.querySelector('button[type="submit"]').textContent = 'Solved';
     }
     else{
         alert('Flag Incorrect')
@@ -37,7 +39,8 @@ async function onsubmit3() {
         const flag = result.flag;
 
         if (data === flag) {
-            alert('Flag 1 is correct');
+            alert('Flag 3 is correct');
+            document.querySelector('button[type="submit"]').textContent = 'Solved';
         } else {
             alert('Flag Incorrect');
         }
