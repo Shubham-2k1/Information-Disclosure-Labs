@@ -7,7 +7,7 @@ async function onsubmit1() {
 
         if (data === flag) {
             alert('Flag 1 is correct');
-            document.querySelector('button[type="submit"]').textContent = 'Solved'; 
+            document.querySelector('button[type="submit"]').textContent = 'Solved';
         } else {
             alert('Flag Incorrect');
         }
