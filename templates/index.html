@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Disclosure Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="static/index.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="head">
+    <p>Welcome Hacker !</p>
+
+  </div>
+    <div class="cards">
+
+        <!-- Lab 1 -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Lab</h5>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZbtFA8JcKpIUi2ZiNuKj1AtUa5ATa7QIZSg&s">
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"></li>
+            </ul>
+            <div class="card-body">
+              <a href="/lab" target="_blank" class="card-link">Go to lab</a>
+              <a href="#" id="hint1" class="card-link">Hint</a>
+              <a href="#" id="solve1" class="card-link">Solution</a>
+            </div>
+          </div>
+    </div>
+
+    <div class="card2">
+      <!--Solution-->
+      <div class="solution">
+        <form onsubmit="onsubmit1(); return false;" autocomplete="off">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Flag 1</label>
+            <input type="text" class="form-control" id="flag1" aria-describedby="emailHelp" autocomplete="off">
+          </div>
+          <button type="submit" class="btn btn-primary" >Submit</button>
+        </form>
+
+        <form onsubmit="onsubmit2(); return false;">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Flag 2</label>
+            <input type="text" class="form-control" id="flag2" aria-describedby="emailHelp">
+          </div>
+          <button type="submit" class="btn btn-primary" onsubmit="submit2()">Submit</button>
+        </form>
+
+        <form onsubmit="onsubmit3(); return false;">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Flag 3</label>
+            <input type="text" class="form-control" id="flag3" aria-describedby="emailHelp">
+          </div>
+          <button type="submit" class="btn btn-primary" onsubmit="submit3()">Submit</button>
+        </form>
+      </div>
+
+    </div>
+      
+
+    <!-- JavaScript -->
+    <script src="static/script.js"></script>
+</body>
+</html>
